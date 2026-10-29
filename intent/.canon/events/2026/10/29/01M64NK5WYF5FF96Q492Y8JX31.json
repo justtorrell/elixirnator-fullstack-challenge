@@ -1,0 +1,15 @@
+{
+  "id": "01M64NK5WYF5FF96Q492Y8JX31",
+  "ts": "2026-10-29T20:28:32.543Z",
+  "principal": "local",
+  "project_id": "124a28ce-e3a2-423f-aade-2565d19f0129",
+  "op": "wp.new",
+  "subject": {
+    "type": "wp",
+    "id": "ST0001/04"
+  },
+  "payload": {
+    "scope": "S",
+    "title": "Worker-bee review of map, skeleton and design"
+  }
+}

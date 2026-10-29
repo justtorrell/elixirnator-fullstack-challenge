@@ -1,0 +1,15 @@
+{
+  "id": "01M64NK5W6AEGHR6V11AXP8DZF",
+  "ts": "2026-10-29T20:28:32.519Z",
+  "principal": "local",
+  "project_id": "124a28ce-e3a2-423f-aade-2565d19f0129",
+  "op": "wp.new",
+  "subject": {
+    "type": "wp",
+    "id": "ST0001/03"
+  },
+  "payload": {
+    "scope": "S",
+    "title": "WDD project map and module skeleton"
+  }
+}

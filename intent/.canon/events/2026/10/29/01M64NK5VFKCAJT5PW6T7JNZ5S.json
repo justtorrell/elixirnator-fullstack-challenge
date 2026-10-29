@@ -1,0 +1,15 @@
+{
+  "id": "01M64NK5VFKCAJT5PW6T7JNZ5S",
+  "ts": "2026-10-29T20:28:32.495Z",
+  "principal": "local",
+  "project_id": "124a28ce-e3a2-423f-aade-2565d19f0129",
+  "op": "wp.new",
+  "subject": {
+    "type": "wp",
+    "id": "ST0001/02"
+  },
+  "payload": {
+    "scope": "S",
+    "title": "Acceptance contract (ACs and ATs)"
+  }
+}

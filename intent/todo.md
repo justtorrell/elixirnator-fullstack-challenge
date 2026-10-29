@@ -9,6 +9,10 @@ A DOING / TODO / DONE view, projected from steel-thread and work-package status:
 ## DOING
 
 - [-] ST0001: Setup & Plan WDD structure of NASA application
+  - [-] 01: Design breakdown (design.md: words to pseudo to tasks to checklist)
+  - [ ] 02: Acceptance contract (ACs and ATs)
+  - [ ] 03: WDD project map and module skeleton
+  - [ ] 04: Worker-bee review of map, skeleton and design
 
 ## TODO
 

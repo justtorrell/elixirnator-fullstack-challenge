@@ -1,0 +1,15 @@
+{
+  "id": "01M64NK5TN6RE6G0YC9ZN31FAT",
+  "ts": "2026-10-29T20:28:32.469Z",
+  "principal": "local",
+  "project_id": "124a28ce-e3a2-423f-aade-2565d19f0129",
+  "op": "wp.new",
+  "subject": {
+    "type": "wp",
+    "id": "ST0001/01"
+  },
+  "payload": {
+    "scope": "S",
+    "title": "Design breakdown (design.md: words to pseudo to tasks to checklist)"
+  }
+}
