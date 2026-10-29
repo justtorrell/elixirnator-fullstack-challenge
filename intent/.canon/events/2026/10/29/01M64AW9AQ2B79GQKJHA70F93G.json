@@ -1,0 +1,15 @@
+{
+  "id": "01M64AW9AQ2B79GQKJHA70F93G",
+  "ts": "2026-10-29T17:21:16.632Z",
+  "principal": "local",
+  "project_id": "124a28ce-e3a2-423f-aade-2565d19f0129",
+  "op": "thread.set",
+  "subject": {
+    "type": "thread",
+    "id": "ST0001"
+  },
+  "payload": {
+    "field": "context",
+    "via": "address"
+  }
+}

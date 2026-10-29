@@ -8,7 +8,7 @@ A DOING / TODO / DONE view, projected from steel-thread and work-package status:
 
 ## DOING
 
-_(none)_
+- [-] ST0001: Setup & Plan WDD structure of NASA application
 
 ## TODO
 

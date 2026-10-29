@@ -1,0 +1,14 @@
+{
+  "id": "01M64AKQD08EZYW8Q3FE4CD93V",
+  "ts": "2026-10-29T17:16:36.128Z",
+  "principal": "local",
+  "project_id": "124a28ce-e3a2-423f-aade-2565d19f0129",
+  "op": "st.new",
+  "subject": {
+    "type": "thread",
+    "id": "ST0001"
+  },
+  "payload": {
+    "title": "Setup & Plan WDD structure of NASA application"
+  }
+}
