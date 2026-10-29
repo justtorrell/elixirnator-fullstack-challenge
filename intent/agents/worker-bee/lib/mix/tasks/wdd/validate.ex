@@ -425,7 +425,7 @@ defmodule Mix.Tasks.Wdd.Validate do
     error_count = Enum.count(violations, &(&1.severity == :error))
     warning_count = Enum.count(violations, &(&1.severity == :warning))
 
-    error_count > 0 or (strict_mode and warning_count > 0)
+    error_count > 0 or (strict_mode == true and warning_count > 0)
   end
 
   defp calculate_average_score(validation_results) do
