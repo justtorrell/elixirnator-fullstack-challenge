@@ -1,0 +1,14 @@
+{
+  "intent_version": "3.2.6",
+  "project_name": "elixirnator-fullstack-challenge",
+  "author": "unknown",
+  "project_id": "124a28ce-e3a2-423f-aade-2565d19f0129",
+  "created": "2026-10-29T14:06:23.801Z",
+  "intent_dir": "intent",
+  "languages": [
+    "elixir"
+  ],
+  "backup": {
+    "schedule": "daily"
+  }
+}

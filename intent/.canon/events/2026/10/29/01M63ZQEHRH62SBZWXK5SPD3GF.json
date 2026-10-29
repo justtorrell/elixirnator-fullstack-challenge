@@ -1,0 +1,14 @@
+{
+  "id": "01M63ZQEHRH62SBZWXK5SPD3GF",
+  "ts": "2026-10-29T14:06:23.801Z",
+  "principal": "local",
+  "project_id": "elixirnator-fullstack-challenge",
+  "op": "init",
+  "subject": {
+    "type": "project",
+    "id": "elixirnator-fullstack-challenge"
+  },
+  "payload": {
+    "intent_version": "3.2.6"
+  }
+}
