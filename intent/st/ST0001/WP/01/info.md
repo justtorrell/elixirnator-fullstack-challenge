@@ -2,14 +2,14 @@
 wp_id: WP-01
 title: Design breakdown (design.md: words to pseudo to tasks to checklist)
 scope: S
-status: WIP
+status: Done
 ---
 
 # WP-01: Design breakdown (design.md: words to pseudo to tasks to checklist)
 
 ## Objective
 
-_(not yet written)_
+Write design.md as a one-day delivery plan (words to pseudo, pseudo to tasks, task checklist) and attach it to the thread.
 
 ## Acceptance
 

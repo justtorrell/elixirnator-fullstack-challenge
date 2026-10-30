@@ -1,9 +1,9 @@
 ---
 st_id: ST0001
-title: Setup & Plan WDD structure of NASA application
+title: NASA fuel calculator: plan and build (one-day delivery)
 ---
 
-# ST0001: Setup & Plan WDD structure of NASA application -- Acceptance
+# ST0001: NASA fuel calculator: plan and build (one-day delivery) -- Acceptance
 
 > **THIS FILE IS A GENERATED VIEW, AND A ROW AUTHORED HERE IS DISCARDED BY THE NEXT SYNC.** The acceptance contract is canon in the thread model; this file renders it. Acceptance Criteria (AC) are the ratified completeness boundary; Acceptance Tests (AT) are the small red-to-green tests that prove them.
 >
@@ -13,7 +13,79 @@ title: Setup & Plan WDD structure of NASA application
 
 ## Acceptance Criteria
 
+### Group AC01
+
+- AC01 Fuel calculation matches the spec: the Apollo 11 land-on-Earth example (9278 for one application, 13447 in total) and the three example missions (Apollo 11 51898, Mars 33388, Passenger Ship 212161) -- satisfied: no (computed)
+
+### Group AC02
+
+- AC02 The Missions boundary rejects invalid input with errors as data: equipment mass must be a positive number, and every step needs a known action (launch, land) and planet (Earth, Moon, Mars) -- satisfied: no (computed)
+
+### Group AC03
+
+- AC03 The LiveView shows the total fuel and updates it in real time as the user changes the mass or the flight path, including adding and removing steps -- satisfied: no (computed)
+
+### Group AC04
+
+- AC04 The form shows validation errors for an invalid mass or selection and shows no total until the input is valid -- satisfied: no (computed)
+
+### Group AC05
+
+- AC05 (non-test) design.md is attached with the one-day delivery plan: words to pseudo, pseudo to tasks, and a task checklist -- evidence: intent/st/ST0001/design.md attached via intent st attach (2026-10-30) -- satisfied: yes
+
+### Group AC06
+
+- AC06 (non-test) Code is organised in WDD layers described by elixirator_challenge/.wdd_project_map.yaml, and mix wdd.validate exits 0 -- satisfied: no
+
+### Group AT01
+
+_(no criteria in this group)_
+
+### Group AT02
+
+_(no criteria in this group)_
+
+### Group AT03
+
+_(no criteria in this group)_
+
 ## Acceptance Tests
+
+### Group AC01
+
+_(no tests in this group)_
+
+### Group AC02
+
+_(no tests in this group)_
+
+### Group AC03
+
+_(no tests in this group)_
+
+### Group AC04
+
+_(no tests in this group)_
+
+### Group AC05
+
+_(no tests in this group)_
+
+### Group AC06
+
+_(no tests in this group)_
+
+### Group AT01
+
+- AT01 `elixirator_challenge/test/elixirator_challenge/core/mission_calculations_test.exs` -- covers AC01 -- status: to-write -- Test file written in task C3-C6
+
+### Group AT02
+
+- AT02 `elixirator_challenge/test/elixirator_challenge/boundary/missions_test.exs` -- covers AC02 -- status: to-write -- Test file written in tasks B1-B3
+
+### Group AT03
+
+- AT03 `elixirator_challenge/test/elixirator_challenge_web/live/mission_live_test.exs` -- covers AC03, AC04 -- status: to-write -- Test file written in task L6
 
 ---
 

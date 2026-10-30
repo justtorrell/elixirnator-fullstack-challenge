@@ -1,0 +1,15 @@
+{
+  "id": "01M65GSM1VHEJMN9PVB4FSMWZM",
+  "ts": "2026-10-30T04:23:55.195Z",
+  "principal": "local",
+  "project_id": "124a28ce-e3a2-423f-aade-2565d19f0129",
+  "op": "wp.new",
+  "subject": {
+    "type": "wp",
+    "id": "ST0001/06"
+  },
+  "payload": {
+    "scope": "S",
+    "title": "Boundary: Missions API with validation"
+  }
+}

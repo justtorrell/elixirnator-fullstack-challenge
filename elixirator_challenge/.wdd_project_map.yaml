@@ -1,0 +1,23 @@
+# WDD Project Structure Map
+# Layer paths are relative to this file's directory (the app root).
+# No root_path: mix wdd.validate resolves paths from where it runs.
+# No workers: each LiveView is its own isolated process (see ST0001 design.md).
+# lib/elixirator_challenge_web is the web boundary; it is unmapped because the
+# map holds one path per layer, and is reviewed with critic-elixir instead.
+
+project_name: "elixirator_challenge"
+project_type: phoenix_web
+
+wdd_layers:
+  data: "lib/elixirator_challenge/data"
+  functions: "lib/elixirator_challenge/core"
+  boundaries: "lib/elixirator_challenge/boundary"
+  lifecycles: "lib/elixirator_challenge/application.ex"
+  tests: "test"
+
+naming_conventions:
+  module_prefix: "ElixiratorChallenge"
+
+framework_considerations:
+  - "Phoenix LiveView as the web boundary"
+  - "No database: form params are parsed and validated in Boundary.Missions"

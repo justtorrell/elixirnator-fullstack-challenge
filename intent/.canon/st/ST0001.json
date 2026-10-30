@@ -1,7 +1,7 @@
 {
   "schema": "intent/thread@3.0",
   "id": "ST0001",
-  "title": "Setup & Plan WDD structure of NASA application",
+  "title": "NASA fuel calculator: plan and build (one-day delivery)",
   "slug": "setup-plan-wdd-structure-of-nasa-application",
   "status": "wip",
   "created": "2026-10-29",
@@ -14,8 +14,8 @@
       "seq": 1,
       "title": "Design breakdown (design.md: words to pseudo to tasks to checklist)",
       "scope": "S",
-      "status": "wip",
-      "objective": "",
+      "status": "done",
+      "objective": "Write design.md as a one-day delivery plan (words to pseudo, pseudo to tasks, task checklist) and attach it to the thread.",
       "body": "",
       "preamble": ""
     },
@@ -23,8 +23,8 @@
       "seq": 2,
       "title": "Acceptance contract (ACs and ATs)",
       "scope": "S",
-      "status": "not-started",
-      "objective": "",
+      "status": "done",
+      "objective": "Define the acceptance contract from the spec: ACs AC01-AC06 and the ATs that cover them.",
       "body": "",
       "preamble": ""
     },
@@ -32,8 +32,8 @@
       "seq": 3,
       "title": "WDD project map and module skeleton",
       "scope": "S",
-      "status": "not-started",
-      "objective": "",
+      "status": "wip",
+      "objective": "Write elixirator_challenge/.wdd_project_map.yaml and the empty layer modules, plus the mission fixtures (design tasks S2, S3).",
       "body": "",
       "preamble": ""
     },
@@ -42,9 +42,120 @@
       "title": "Worker-bee review of map, skeleton and design",
       "scope": "S",
       "status": "not-started",
-      "objective": "",
+      "objective": "Run mix wdd.validate and the elixir critic on the finished code and fix what they flag (design tasks W1, W2).",
       "body": "",
       "preamble": ""
+    },
+    {
+      "seq": 5,
+      "title": "Core: data structures and MissionCalculations",
+      "scope": "S",
+      "status": "not-started",
+      "objective": "Build Planet, FlightStep, Mission and MissionCalculations test-first against the spec values (design tasks C1-C6).",
+      "body": "",
+      "preamble": ""
+    },
+    {
+      "seq": 6,
+      "title": "Boundary: Missions API with validation",
+      "scope": "S",
+      "status": "not-started",
+      "objective": "Build Missions.calculate/1: parse and validate form params, return errors as data, delegate to the core (design tasks B1-B3).",
+      "body": "",
+      "preamble": ""
+    },
+    {
+      "seq": 7,
+      "title": "LiveView: mission form, live results and tests",
+      "scope": "S",
+      "status": "not-started",
+      "objective": "Build MissionLive and its components: live total, add/remove steps, validation errors, LiveView tests (design tasks L1-L6).",
+      "body": "",
+      "preamble": ""
+    }
+  ],
+  "criteria": [
+    {
+      "id": "AC01",
+      "text": "Fuel calculation matches the spec: the Apollo 11 land-on-Earth example (9278 for one application, 13447 in total) and the three example missions (Apollo 11 51898, Mars 33388, Passenger Ship 212161)",
+      "kind": "test",
+      "state": {
+        "is": "computed"
+      }
+    },
+    {
+      "id": "AC02",
+      "text": "The Missions boundary rejects invalid input with errors as data: equipment mass must be a positive number, and every step needs a known action (launch, land) and planet (Earth, Moon, Mars)",
+      "kind": "test",
+      "state": {
+        "is": "computed"
+      }
+    },
+    {
+      "id": "AC03",
+      "text": "The LiveView shows the total fuel and updates it in real time as the user changes the mass or the flight path, including adding and removing steps",
+      "kind": "test",
+      "state": {
+        "is": "computed"
+      }
+    },
+    {
+      "id": "AC04",
+      "text": "The form shows validation errors for an invalid mass or selection and shows no total until the input is valid",
+      "kind": "test",
+      "state": {
+        "is": "computed"
+      }
+    },
+    {
+      "id": "AC05",
+      "text": "design.md is attached with the one-day delivery plan: words to pseudo, pseudo to tasks, and a task checklist",
+      "kind": "non-test",
+      "state": {
+        "is": "satisfied",
+        "evidence": "intent/st/ST0001/design.md attached via intent st attach (2026-10-30)"
+      }
+    },
+    {
+      "id": "AC06",
+      "text": "Code is organised in WDD layers described by elixirator_challenge/.wdd_project_map.yaml, and mix wdd.validate exits 0",
+      "kind": "non-test",
+      "state": {
+        "is": "unsatisfied"
+      }
+    }
+  ],
+  "tests": [
+    {
+      "id": "AT01",
+      "kind": "test",
+      "file": "elixirator_challenge/test/elixirator_challenge/core/mission_calculations_test.exs",
+      "covers": [
+        "AC01"
+      ],
+      "status": "to-write",
+      "note": "Test file written in task C3-C6"
+    },
+    {
+      "id": "AT02",
+      "kind": "test",
+      "file": "elixirator_challenge/test/elixirator_challenge/boundary/missions_test.exs",
+      "covers": [
+        "AC02"
+      ],
+      "status": "to-write",
+      "note": "Test file written in tasks B1-B3"
+    },
+    {
+      "id": "AT03",
+      "kind": "test",
+      "file": "elixirator_challenge/test/elixirator_challenge_web/live/mission_live_test.exs",
+      "covers": [
+        "AC03",
+        "AC04"
+      ],
+      "status": "to-write",
+      "note": "Test file written in task L6"
     }
   ],
   "attachments": [
@@ -56,9 +167,9 @@
     },
     {
       "path": "design.md",
-      "text": "---\nst_id: ST0001\ntitle: Setup & Plan WDD structure of NASA application\n---\n\n# ST0001: Setup & Plan WDD structure of NASA application -- Design\n\n# Words to pseudo\n\n# Pseudo to tasks\n\n# Task checklist",
-      "bytes": 199,
-      "sha256": "e56e9096aab3da75beb6f5d3be7815f231ad7becd48c16ca0ef2bd9177421182"
+      "text": "---\nst_id: ST0001\ntitle: Setup & Plan WDD structure of NASA application\n---\n\n# ST0001: Setup & Plan WDD structure of NASA application -- Design\n\nA one-day delivery plan for the whole challenge (`elixir-full-stack-challenge.md`), built from the plan in `info.md`. Every decision is made here so the day is spent writing tests and code, not deciding. Total budget: about 7.5 hours.\n\n| Block     | What                                                     | Time      |\n| --------- | -------------------------------------------------------- | --------- |\n| Setup     | Intent admin, WDD map, module skeleton, test fixtures    | 45 min    |\n| Core      | Data structures and `MissionCalculations`                | 2 hours   |\n| Boundary  | `Missions` API with validation                           | 1 hour    |\n| LiveView  | Form, add/remove steps, live results, validation, tests  | 3 hours   |\n| Wrap-up   | Format, test, validate, commit, close the thread         | 30 min    |\n\n# Words to pseudo\n\n## Layers and files\n\n| WDD layer  | Path                                          | Modules                                              |\n| ---------- | --------------------------------------------- | ---------------------------------------------------- |\n| Data       | `lib/elixirator_challenge/data/`              | `Data.Planet`, `Data.FlightStep`, `Data.Mission`     |\n| Functions  | `lib/elixirator_challenge/core/`              | `Core.MissionCalculations`                           |\n| Boundary   | `lib/elixirator_challenge/boundary/`          | `Boundary.Missions`                                  |\n| Web        | `lib/elixirator_challenge_web/live/`          | `MissionLive`, `MissionComponents`                   |\n| Lifecycle  | `lib/elixirator_challenge/application.ex`     | unchanged                                            |\n| Workers    | none                                          | none (each LiveView is its own isolated process)     |\n| Tests      | `test/`                                       | one test file per module, plus shared fixtures       |\n\nAll module names are prefixed with `ElixiratorChallenge.` (`ElixiratorChallengeWeb.` for the web layer).\n\n## Data\n\n```elixir\n# Data.Planet -- the planets and their gravity. Planets are atoms.\n@gravity %{earth: 9.807, moon: 1.62, mars: 3.711}\n\ngravity(:earth)   #=> 9.807\nplanets()         #=> [:earth, :moon, :mars]\nparse(\"earth\")    #=> {:ok, :earth}\nparse(\"pluto\")    #=> {:error, :unknown_planet}\n# parse/1 looks the string up in the known planets; never String.to_atom/1 on user input\n\n# Data.FlightStep -- one step of the flight path\n@enforce_keys [:action, :planet]\ndefstruct [:action, :planet]          # action :: :launch | :land\nparse_action(\"launch\")  #=> {:ok, :launch}\nparse_action(\"orbit\")   #=> {:error, :unknown_action}\n\n# Data.Mission -- what the user is planning\n@enforce_keys [:equipment_mass, :flight_path]\ndefstruct [:equipment_mass, :flight_path]   # flight_path :: [FlightStep.t()] in flight order\n```\n\n## Functions\n\n`Core.MissionCalculations` is pure and data-first. It trusts its input, because the boundary has already validated it.\n\n```elixir\n@launch {0.042, 33}\n@land {0.033, 42}\n\ncalculate_launch_fuel(mass, gravity)  # floor(mass * gravity * 0.042 - 33)\ncalculate_land_fuel(mass, gravity)    # floor(mass * gravity * 0.033 - 42)\n\ncalculate_total_launch_fuel(mass, gravity):\n  fuel = calculate_launch_fuel(mass, gravity)\n  if fuel <= 0, do: 0, else: fuel + calculate_total_launch_fuel(fuel, gravity)\n\ncalculate_total_land_fuel(mass, gravity)   # same shape, using calculate_land_fuel\n\ncalculate_step_fuel(mass, %FlightStep{action: :launch, planet: p}) -> calculate_total_launch_fuel(mass, Planet.gravity(p))\ncalculate_step_fuel(mass, %FlightStep{action: :land, planet: p})   -> calculate_total_land_fuel(mass, Planet.gravity(p))\n\ncalculate_mission_fuel(%Mission{equipment_mass: mass, flight_path: path}):\n  {step_fuels, total} =\n    path\n    |> Enum.reverse()\n    |> Enum.map_reduce(0, fn step, fuel_so_far ->\n      fuel = calculate_step_fuel(mass + fuel_so_far, step)\n      {%{step: step, fuel: fuel}, fuel_so_far + fuel}\n    end)\n\n  %{total_fuel: total, steps: Enum.reverse(step_fuels)}\n```\n\n`floor/1` is `Kernel.floor/1`, which returns an integer. Use multiple function heads on the action for `calculate_step_fuel/2`, not an `if`.\n\nTaking a `%Mission{}` (rather than mass and path separately) keeps `calculate_mission_fuel` at arity 1 and lets it pipe: `mission |> MissionCalculations.calculate_mission_fuel()`.\n\n## Boundary\n\n`Boundary.Missions` is the one place the input rules live. It takes the form's params as they arrive (strings), parses and validates them, and calls the core. The LiveView passes params straight through and shows whatever comes back.\n\n```elixir\ncalculate(%{\"equipment_mass\" => \"28801\", \"flight_path\" => [%{\"action\" => \"launch\", \"planet\" => \"earth\"}, ...]})\n#=> {:ok, %{total_fuel: 51898, steps: [%{step: %FlightStep{}, fuel: 32988}, ...]}}\n\ncalculate(%{\"equipment_mass\" => \"-5\", \"flight_path\" => [%{\"action\" => \"launch\", \"planet\" => \"pluto\"}]})\n#=> {:error, %{equipment_mass: \"must be a positive number\", flight_path: %{0 => \"unknown planet\"}}}\n\ncalculate(params):\n  mass_result = parse_mass(params[\"equipment_mass\"])\n  path_result = parse_flight_path(params[\"flight_path\"] || [])\n\n  with {:ok, mass} <- mass_result,\n       {:ok, path} <- path_result do\n    {:ok, MissionCalculations.calculate_mission_fuel(%Mission{equipment_mass: mass, flight_path: path})}\n  else\n    _ -> {:error, collect_errors(mass_result, path_result)}\n  end\n```\n\n- **Mass:** parsed with `Float.parse/1`, so `\"28801\"` and `\"28801.5\"` both work. Text, empty input, zero or a negative number gives `\"must be a positive number\"`.\n- **Each step:** the action through `FlightStep.parse_action/1`, the planet through `Planet.parse/1`. Errors are keyed by the step's position.\n- **Empty flight path:** valid, with a total of 0.\n- **Errors are collected for every field,** not just the first one, so the form can show all of them at once. That's why both results are computed before the `with`.\n\n## Web\n\n- **Route:** `live \"/\", MissionLive` replaces `get \"/\", PageController, :home` (delete the page controller, its template and its test).\n- **`MissionLive` state:**\n  - `:equipment_mass` (string)\n  - `:flight_path`, a list of `%{\"action\" => _, \"planet\" => _}` maps\n  - `:result`, either `{:ok, map}` or `{:error, errors}`\n- **`mount/3`:** starts with the Apollo 11 path and mass already filled in, so the page shows a real result on first load. No `connected?` work is needed, because nothing is subscribed or started.\n- **Events.** Every handler updates the state, then calls one private `recalculate/1`, which does `Missions.calculate/1` and assigns `:result`.\n  - `\"validate\"` (`phx-change` on the form): reads the mass and the steps from the params. A form submits the steps as a map keyed `\"0\"`, `\"1\"` and so on, so sort them by index into a list.\n  - `\"add_step\"`: appends `%{\"action\" => \"launch\", \"planet\" => \"earth\"}`.\n  - `\"remove_step\"` with `%{\"index\" => i}`: deletes that step.\n- **`MissionComponents` function components (each with typed `attr`):**\n  - `flight_step_row/1`: the action select, planet select and remove button for one step, plus that step's error.\n  - `fuel_summary/1`: the total fuel in large text, and a table of each step with its fuel. When the input is invalid, it shows \"Fix the errors above to see the fuel required\" instead.\n- **Form:** `to_form/2` over a plain map, using `<.input>` from `core_components.ex` with `type=\"number\"` for the mass and `type=\"select\"` for the action and planet. DaisyUI classes come with the generated components.\n\n## Tests\n\n- **Fixtures:** `test/support/fixtures/mission_fixtures.ex` holds the three spec missions as both `%Mission{}` structs and form params, with their expected totals. Load them in tests with named setups (`setup :apollo_11`).\n\n| Fixture          | Flight path                                                              | Mass  | Total  |\n| ---------------- | ------------------------------------------------------------------------ | ----- | ------ |\n| `apollo_11`      | launch earth, land moon, launch moon, land earth                         | 28801 | 51898  |\n| `mars`           | launch earth, land mars, launch mars, land earth                         | 14606 | 33388  |\n| `passenger_ship` | launch earth, land moon, launch moon, land mars, launch mars, land earth | 75432 | 212161 |\n\n- **Unit values from the spec's formulas** (mass 28801 on Earth):\n\n| Function                                      | Expected |\n| --------------------------------------------- | -------- |\n| `calculate_launch_fuel(28801, 9.807)`         | 11829    |\n| `calculate_land_fuel(28801, 9.807)`           | 9278     |\n| `calculate_total_launch_fuel(28801, 9.807)`   | 19772    |\n| `calculate_total_land_fuel(28801, 9.807)`     | 13447    |\n| `calculate_total_land_fuel(100, 1.62)`        | 0 (first result is already negative) |\n\n# Pseudo to tasks\n\nEach task is test-first: write the failing test, make it pass, tick it off. Times are targets; if a task runs well over, take the simplest version that passes and move on.\n\n## Setup (45 min)\n\n| #  | Task                                                                                         | Time   |\n| -- | -------------------------------------------------------------------------------------------- | ------ |\n| S1 | Intent admin (Claude): retitle ST0001, add the build WPs, add the spec ACs                   | 10 min |\n| S2 | `.wdd_project_map.yaml` (Claude drafts) and empty modules with `@moduledoc` for each layer (you) | 20 min |\n| S3 | `MissionFixtures` with the three spec missions and named setups                              | 15 min |\n\n## Core (2 hours)\n\n| #  | Task                                                                                     | Test against                                   | Time   |\n| -- | ---------------------------------------------------------------------------------------- | ---------------------------------------------- | ------ |\n| C1 | `Planet.gravity/1`, `planets/0`, `parse/1`                                               | the gravity table; `\"pluto\"` rejected          | 20 min |\n| C2 | `FlightStep` struct and `parse_action/1`; `Mission` struct                               | `\"orbit\"` rejected; missing keys raise         | 20 min |\n| C3 | `calculate_launch_fuel/2`, `calculate_land_fuel/2`                                       | 11829, 9278                                    | 15 min |\n| C4 | `calculate_total_launch_fuel/2`, `calculate_total_land_fuel/2`                           | 19772, 13447, and 0 for mass 100 on the Moon   | 25 min |\n| C5 | `calculate_step_fuel/2`                                                                  | launch earth 28801 is 19772                    | 10 min |\n| C6 | `calculate_mission_fuel/1`                                                               | 51898, 33388, 212161; empty path is 0; step order in `steps` | 30 min |\n\n## Boundary (1 hour)\n\n| #  | Task                                                                          | Test against                                       | Time   |\n| -- | ----------------------------------------------------------------------------- | -------------------------------------------------- | ------ |\n| B1 | `Missions.calculate/1` happy path from form params                            | the three fixtures' params give their totals        | 20 min |\n| B2 | Mass validation                                                               | `\"0\"`, `\"-5\"`, `\"abc\"`, `\"\"` give the mass error    | 15 min |\n| B3 | Step validation and collecting all errors                                     | unknown planet at index 1; bad mass and bad step together | 25 min |\n\n## LiveView (3 hours)\n\n| #  | Task                                                                              | Time   |\n| -- | --------------------------------------------------------------------------------- | ------ |\n| L1 | Route, `MissionLive` mount with Apollo 11 defaults, delete the page controller    | 30 min |\n| L2 | `flight_step_row/1` and the form with mass input                                  | 30 min |\n| L3 | `\"add_step\"` and `\"remove_step\"` events                                           | 25 min |\n| L4 | `\"validate\"` event and `recalculate/1`                                            | 25 min |\n| L5 | `fuel_summary/1`: total, per-step table, invalid-input message; field errors      | 30 min |\n| L6 | LiveView tests: Apollo 11 total on load; enter the Mars mission and see 33388; add and remove a step changes the total; invalid mass shows the error and hides the total | 40 min |\n\n## Wrap-up (30 min)\n\n| #  | Task                                                                                              | Time   |\n| -- | ------------------------------------------------------------------------------------------------- | ------ |\n| W1 | `mix format`, `mix compile --warnings-as-errors`, `mix test`                                      | 10 min |\n| W2 | `mix wdd.validate` and fix anything it flags in the mapped layers                                  | 10 min |\n| W3 | Short README section (how to run, where each layer lives), satisfy the ACs, commit, `intent st done` | 10 min |\n\n## Skip if short on time\n\nNone of these are required by the spec:\n\n- The per-step table in `fuel_summary/1` (keep the total).\n- Starting with the Apollo 11 defaults (start with one empty step instead).\n- Extra styling beyond the generated DaisyUI components.\n- The README section (the commit history and this design cover it).\n\n# Task checklist\n\n- [ ] S1 Intent admin\n- [ ] S2 WDD map and skeleton\n- [ ] S3 Mission fixtures\n- [ ] C1 `Planet`\n- [ ] C2 `FlightStep` and `Mission`\n- [ ] C3 Single-application fuel functions\n- [ ] C4 Total fuel per launch and landing\n- [ ] C5 `calculate_step_fuel/2`\n- [ ] C6 `calculate_mission_fuel/1`\n- [ ] B1 `Missions.calculate/1` happy path\n- [ ] B2 Mass validation\n- [ ] B3 Step validation and error collection\n- [ ] L1 Route and mount\n- [ ] L2 Step rows and form\n- [ ] L3 Add and remove steps\n- [ ] L4 Live recalculation\n- [ ] L5 Results and errors\n- [ ] L6 LiveView tests\n- [ ] W1 Format, compile, test\n- [ ] W2 Worker-bee validation\n- [ ] W3 README, ACs, commit, close\n\n# Changes from info.md to review\n\nThese refine `info.md` to keep the day short. Say if you disagree with any of them.\n\n1. **The boundary parses the form strings too, not only the LiveView.** `info.md` says the LiveView turns strings into numbers and the boundary holds the rules. But its boundary tests include \"text instead of a number\", which only works if the boundary sees the raw text. Having the boundary do both keeps all the input rules in one module and makes the LiveView thinner.\n2. **`calculate_mission_fuel` takes a `%Mission{}` (arity 1), not `/2`.** The struct already holds the mass and the path, and this makes the function pipe-friendly.\n3. **The page starts with the Apollo 11 mission filled in,** so there's a real result on first load. This is skippable.\n",
+      "bytes": 15140,
+      "sha256": "b31c1cf2015434e4622e7d3d6633d4ecfa0f240157b9f71322490b5739afe3e3"
     }
   ]
 }

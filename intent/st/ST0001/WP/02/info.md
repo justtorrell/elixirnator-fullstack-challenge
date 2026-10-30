@@ -2,14 +2,14 @@
 wp_id: WP-02
 title: Acceptance contract (ACs and ATs)
 scope: S
-status: Not Started
+status: Done
 ---
 
 # WP-02: Acceptance contract (ACs and ATs)
 
 ## Objective
 
-_(not yet written)_
+Define the acceptance contract from the spec: ACs AC01-AC06 and the ATs that cover them.
 
 ## Acceptance
 

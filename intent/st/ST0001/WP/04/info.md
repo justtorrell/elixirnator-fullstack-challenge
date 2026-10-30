@@ -9,7 +9,7 @@ status: Not Started
 
 ## Objective
 
-_(not yet written)_
+Run mix wdd.validate and the elixir critic on the finished code and fix what they flag (design tasks W1, W2).
 
 ## Acceptance
 

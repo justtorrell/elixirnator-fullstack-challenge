@@ -2,14 +2,14 @@
 wp_id: WP-03
 title: WDD project map and module skeleton
 scope: S
-status: Not Started
+status: WIP
 ---
 
 # WP-03: WDD project map and module skeleton
 
 ## Objective
 
-_(not yet written)_
+Write elixirator_challenge/.wdd_project_map.yaml and the empty layer modules, plus the mission fixtures (design tasks S2, S3).
 
 ## Acceptance
 
