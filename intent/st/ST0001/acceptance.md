@@ -19,7 +19,7 @@ title: NASA fuel calculator: plan and build (one-day delivery)
 
 ### Group AC02
 
-- AC02 The Missions boundary rejects invalid input with errors as data: equipment mass must be a positive number, and every step needs a known action (launch, land) and planet (Earth, Moon, Mars) -- satisfied: no (computed)
+- AC02 The Missions boundary rejects invalid input with errors as data: equipment mass must be a positive number, and every step needs a known action (launch, land) and planet (Earth, Moon, Mars) -- satisfied: yes (computed)
 
 ### Group AC03
 
@@ -81,7 +81,7 @@ _(no tests in this group)_
 
 ### Group AT02
 
-- AT02 `elixirator_challenge/test/elixirator_challenge/boundary/missions_test.exs` -- covers AC02 -- status: to-write -- Test file written in tasks B1-B3
+- AT02 `elixirator_challenge/test/elixirator_challenge/boundary/missions_test.exs` -- covers AC02 -- status: green -- Test file written in tasks B1-B3. The tests were written first and failed before Missions.calculate/1 was implemented.
 
 ### Group AT03
 

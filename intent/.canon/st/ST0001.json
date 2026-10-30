@@ -50,7 +50,7 @@
       "seq": 5,
       "title": "Boundary: Missions API with validation",
       "scope": "S",
-      "status": "wip",
+      "status": "done",
       "objective": "Build Missions.calculate/1: parse and validate form params, return errors as data, delegate to the core (design tasks B1-B3).",
       "body": "",
       "preamble": ""
@@ -59,7 +59,7 @@
       "seq": 6,
       "title": "LiveView: mission form, live results and tests",
       "scope": "S",
-      "status": "not-started",
+      "status": "wip",
       "objective": "Build MissionLive and its components: live total, add/remove steps, validation errors, LiveView tests (design tasks L1-L6).",
       "body": "",
       "preamble": ""
@@ -143,8 +143,8 @@
       "covers": [
         "AC02"
       ],
-      "status": "to-write",
-      "note": "Test file written in tasks B1-B3"
+      "status": "green",
+      "note": "Test file written in tasks B1-B3. The tests were written first and failed before Missions.calculate/1 was implemented."
     },
     {
       "id": "AT03",
