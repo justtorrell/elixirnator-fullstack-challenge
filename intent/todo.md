@@ -14,8 +14,8 @@ A DOING / TODO / DONE view, projected from steel-thread and work-package status:
   - [x] 03: WDD project map and module skeleton
   - [x] 04: Core: data structures and MissionCalculations
   - [x] 05: Boundary: Missions API with validation
-  - [-] 06: LiveView: mission form, live results and tests
-  - [ ] 07: Wrap-up: worker-bee and critic checks on the finished code
+  - [x] 06: LiveView: mission form, live results and tests
+  - [-] 07: Wrap-up: worker-bee and critic checks on the finished code
 
 ## TODO
 

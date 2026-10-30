@@ -59,7 +59,7 @@
       "seq": 6,
       "title": "LiveView: mission form, live results and tests",
       "scope": "S",
-      "status": "wip",
+      "status": "done",
       "objective": "Build MissionLive and its components: live total, add/remove steps, validation errors, LiveView tests (design tasks L1-L6).",
       "body": "",
       "preamble": ""
@@ -68,7 +68,7 @@
       "seq": 7,
       "title": "Wrap-up: worker-bee and critic checks on the finished code",
       "scope": "S",
-      "status": "not-started",
+      "status": "wip",
       "objective": "Run mix wdd.validate and the elixir critic on the finished code and fix what they flag, then commit and close the thread (design tasks W1-W3).",
       "body": "",
       "preamble": ""
@@ -154,7 +154,7 @@
         "AC03",
         "AC04"
       ],
-      "status": "to-write",
+      "status": "green",
       "note": "Test file written in task L6"
     }
   ],

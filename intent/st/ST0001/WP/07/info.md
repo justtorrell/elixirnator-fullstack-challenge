@@ -2,7 +2,7 @@
 wp_id: WP-07
 title: Wrap-up: worker-bee and critic checks on the finished code
 scope: S
-status: Not Started
+status: WIP
 ---
 
 # WP-07: Wrap-up: worker-bee and critic checks on the finished code

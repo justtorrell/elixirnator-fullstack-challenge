@@ -2,7 +2,7 @@
 wp_id: WP-06
 title: LiveView: mission form, live results and tests
 scope: S
-status: WIP
+status: Done
 ---
 
 # WP-06: LiveView: mission form, live results and tests

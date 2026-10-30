@@ -23,11 +23,11 @@ title: NASA fuel calculator: plan and build (one-day delivery)
 
 ### Group AC03
 
-- AC03 The LiveView shows the total fuel and updates it in real time as the user changes the mass or the flight path, including adding and removing steps -- satisfied: no (computed)
+- AC03 The LiveView shows the total fuel and updates it in real time as the user changes the mass or the flight path, including adding and removing steps -- satisfied: yes (computed)
 
 ### Group AC04
 
-- AC04 The form shows validation errors for an invalid mass or selection and shows no total until the input is valid -- satisfied: no (computed)
+- AC04 The form shows validation errors for an invalid mass or selection and shows no total until the input is valid -- satisfied: yes (computed)
 
 ### Group AC05
 
@@ -85,7 +85,7 @@ _(no tests in this group)_
 
 ### Group AT03
 
-- AT03 `elixirator_challenge/test/elixirator_challenge_web/live/mission_live_test.exs` -- covers AC03, AC04 -- status: to-write -- Test file written in task L6
+- AT03 `elixirator_challenge/test/elixirator_challenge_web/live/mission_live_test.exs` -- covers AC03, AC04 -- status: green -- Test file written in task L6
 
 ---
 
