@@ -14,3 +14,7 @@ intent/.cache/
 
 # Intent's store snapshots and text exports: per-machine, never committed.
 intent/.backup/
+
+# Editor and Claude Code settings: per-machine, never committed.
+.claude/
+.vscode/
