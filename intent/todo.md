@@ -12,7 +12,7 @@ A DOING / TODO / DONE view, projected from steel-thread and work-package status:
   - [x] 01: Design breakdown (design.md: words to pseudo to tasks to checklist)
   - [x] 02: Acceptance contract (ACs and ATs)
   - [x] 03: WDD project map and module skeleton
-  - [ ] 04: Worker-bee review of map, skeleton and design
+  - [ ] 04: Wrap-up: worker-bee and critic checks on the finished code (runs last)
   - [ ] 05: Core: data structures and MissionCalculations
   - [ ] 06: Boundary: Missions API with validation
   - [ ] 07: LiveView: mission form, live results and tests

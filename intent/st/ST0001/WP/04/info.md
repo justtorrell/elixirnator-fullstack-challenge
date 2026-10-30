@@ -1,11 +1,11 @@
 ---
 wp_id: WP-04
-title: Worker-bee review of map, skeleton and design
+title: Wrap-up: worker-bee and critic checks on the finished code (runs last)
 scope: S
 status: Not Started
 ---
 
-# WP-04: Worker-bee review of map, skeleton and design
+# WP-04: Wrap-up: worker-bee and critic checks on the finished code (runs last)
 
 ## Objective
 

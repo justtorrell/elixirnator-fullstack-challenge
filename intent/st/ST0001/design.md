@@ -15,6 +15,20 @@ A one-day delivery plan for the whole challenge (`elixir-full-stack-challenge.md
 | LiveView  | Form, add/remove steps, live results, validation, tests  | 3 hours   |
 | Wrap-up   | Format, test, validate, commit, close the thread         | 30 min    |
 
+## Work package order
+
+Work packages are numbered in the order they were created, not the order they run. WP04 was created before the build packages but runs last, once there is finished code to check.
+
+| Order | WP        | Block    | Design tasks  |
+| ----- | --------- | -------- | ------------- |
+| 1     | ST0001/01 | Design   | this document |
+| 2     | ST0001/02 | Design   | ACs and ATs   |
+| 3     | ST0001/03 | Setup    | S1-S3         |
+| 4     | ST0001/05 | Core     | C1-C6         |
+| 5     | ST0001/06 | Boundary | B1-B3         |
+| 6     | ST0001/07 | LiveView | L1-L6         |
+| 7     | ST0001/04 | Wrap-up  | W1-W3         |
+
 # Words to pseudo
 
 ## Layers and files
