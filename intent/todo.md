@@ -11,7 +11,7 @@ A DOING / TODO / DONE view, projected from steel-thread and work-package status:
 - [-] ST0001: NASA fuel calculator: plan and build (one-day delivery)
   - [x] 01: Design breakdown (design.md: words to pseudo to tasks to checklist)
   - [x] 02: Acceptance contract (ACs and ATs)
-  - [-] 03: WDD project map and module skeleton
+  - [x] 03: WDD project map and module skeleton
   - [ ] 04: Worker-bee review of map, skeleton and design
   - [ ] 05: Core: data structures and MissionCalculations
   - [ ] 06: Boundary: Missions API with validation

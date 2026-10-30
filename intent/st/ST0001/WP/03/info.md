@@ -2,7 +2,7 @@
 wp_id: WP-03
 title: WDD project map and module skeleton
 scope: S
-status: WIP
+status: Done
 ---
 
 # WP-03: WDD project map and module skeleton

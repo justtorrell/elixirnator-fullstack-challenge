@@ -2,7 +2,9 @@ defmodule ElixiratorChallengeWeb.ErrorJSONTest do
   use ElixiratorChallengeWeb.ConnCase, async: true
 
   test "renders 404" do
-    assert ElixiratorChallengeWeb.ErrorJSON.render("404.json", %{}) == %{errors: %{detail: "Not Found"}}
+    assert ElixiratorChallengeWeb.ErrorJSON.render("404.json", %{}) == %{
+             errors: %{detail: "Not Found"}
+           }
   end
 
   test "renders 500" do

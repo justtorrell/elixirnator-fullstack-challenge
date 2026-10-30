@@ -9,7 +9,8 @@ defmodule ElixiratorChallenge.Application do
   def start(_type, _args) do
     children = [
       ElixiratorChallengeWeb.Telemetry,
-      {DNSCluster, query: Application.get_env(:elixirator_challenge, :dns_cluster_query) || :ignore},
+      {DNSCluster,
+       query: Application.get_env(:elixirator_challenge, :dns_cluster_query) || :ignore},
       {Phoenix.PubSub, name: ElixiratorChallenge.PubSub},
       # Start a worker by calling: ElixiratorChallenge.Worker.start_link(arg)
       # {ElixiratorChallenge.Worker, arg},
