@@ -1,9 +1,9 @@
 ---
 st_id: ST0001
 title: NASA fuel calculator: plan and build (one-day delivery)
-status: WIP
+status: Completed
 created: 2026-10-29
-completed:
+completed: 2026-10-30
 ---
 
 # ST0001: NASA fuel calculator: plan and build (one-day delivery)

@@ -1,4 +1,5 @@
 defmodule ElixiratorChallengeWeb.MissionLiveTest do
+  # AT03: LiveView live updates and validation errors (covers AC03, AC04)
   use ElixiratorChallengeWeb.ConnCase, async: true
 
   import Phoenix.LiveViewTest

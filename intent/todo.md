@@ -8,14 +8,7 @@ A DOING / TODO / DONE view, projected from steel-thread and work-package status:
 
 ## DOING
 
-- [-] ST0001: NASA fuel calculator: plan and build (one-day delivery)
-  - [x] 01: Design breakdown (design.md: words to pseudo to tasks to checklist)
-  - [x] 02: Acceptance contract (ACs and ATs)
-  - [x] 03: WDD project map and module skeleton
-  - [x] 04: Core: data structures and MissionCalculations
-  - [x] 05: Boundary: Missions API with validation
-  - [x] 06: LiveView: mission form, live results and tests
-  - [x] 07: Wrap-up: worker-bee and critic checks on the finished code
+_(none)_
 
 ## TODO
 
@@ -23,7 +16,14 @@ _(none)_
 
 ## DONE
 
-_(none)_
+- [x] ST0001: NASA fuel calculator: plan and build (one-day delivery)
+  - [x] 01: Design breakdown (design.md: words to pseudo to tasks to checklist)
+  - [x] 02: Acceptance contract (ACs and ATs)
+  - [x] 03: WDD project map and module skeleton
+  - [x] 04: Core: data structures and MissionCalculations
+  - [x] 05: Boundary: Missions API with validation
+  - [x] 06: LiveView: mission form, live results and tests
+  - [x] 07: Wrap-up: worker-bee and critic checks on the finished code
 
 ---
 

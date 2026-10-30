@@ -1,4 +1,5 @@
 defmodule ElixiratorChallenge.Core.MissionCalculationsTest do
+  # AT01: spec fuel examples and all three missions (covers AC01)
   use ExUnit.Case, async: true
 
   alias ElixiratorChallenge.Core.MissionCalculations

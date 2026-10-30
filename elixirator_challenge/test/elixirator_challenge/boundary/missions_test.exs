@@ -1,4 +1,5 @@
 defmodule ElixiratorChallenge.Boundary.MissionsTest do
+  # AT02: Missions.calculate/1 validation and results (covers AC02)
   use ExUnit.Case, async: true
 
   alias ElixiratorChallenge.Boundary.Missions
