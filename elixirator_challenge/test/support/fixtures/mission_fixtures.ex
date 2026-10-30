@@ -4,6 +4,8 @@ defmodule ElixiratorChallenge.MissionFixtures do
   We have one function per spec mission
   """
 
+  alias ElixiratorChallenge.Data.{FlightStep, Mission}
+
   @doc """
   Apollo 11 - Flight Path: launch earth, land moon, launch moon, land earth
   """
@@ -17,6 +19,15 @@ defmodule ElixiratorChallenge.MissionFixtures do
           %{"action" => "land", "planet" => "moon"},
           %{"action" => "launch", "planet" => "moon"},
           %{"action" => "land", "planet" => "earth"}
+        ]
+      },
+      mission: %Mission{
+        equipment_mass: 28_801,
+        flight_path: [
+          %FlightStep{action: :launch, planet: :earth},
+          %FlightStep{action: :land, planet: :moon},
+          %FlightStep{action: :launch, planet: :moon},
+          %FlightStep{action: :land, planet: :earth}
         ]
       },
       expected_total: 51_898
@@ -37,6 +48,15 @@ defmodule ElixiratorChallenge.MissionFixtures do
           %{"action" => "land", "planet" => "earth"}
         ]
       },
+      mission: %Mission{
+        equipment_mass: 14_606,
+        flight_path: [
+          %FlightStep{action: :launch, planet: :earth},
+          %FlightStep{action: :land, planet: :mars},
+          %FlightStep{action: :launch, planet: :mars},
+          %FlightStep{action: :land, planet: :earth}
+        ]
+      },
       expected_total: 33_388
     }
   end
@@ -55,6 +75,17 @@ defmodule ElixiratorChallenge.MissionFixtures do
           %{"action" => "land", "planet" => "mars"},
           %{"action" => "launch", "planet" => "mars"},
           %{"action" => "land", "planet" => "earth"}
+        ]
+      },
+      mission: %Mission{
+        equipment_mass: 75_432,
+        flight_path: [
+          %FlightStep{action: :launch, planet: :earth},
+          %FlightStep{action: :land, planet: :moon},
+          %FlightStep{action: :launch, planet: :moon},
+          %FlightStep{action: :land, planet: :mars},
+          %FlightStep{action: :launch, planet: :mars},
+          %FlightStep{action: :land, planet: :earth}
         ]
       },
       expected_total: 212_161
