@@ -68,7 +68,7 @@
       "seq": 7,
       "title": "Wrap-up: worker-bee and critic checks on the finished code",
       "scope": "S",
-      "status": "wip",
+      "status": "done",
       "objective": "Run mix wdd.validate and the elixir critic on the finished code and fix what they flag, then commit and close the thread (design tasks W1-W3).",
       "body": "",
       "preamble": ""
@@ -121,7 +121,8 @@
       "text": "Code is organised in WDD layers described by elixirator_challenge/.wdd_project_map.yaml, and mix wdd.validate exits 0",
       "kind": "non-test",
       "state": {
-        "is": "unsatisfied"
+        "is": "satisfied",
+        "evidence": "mix wdd.validate exit 0, compliance 99.7%, 0 errors, 0 warnings (2026-10-30, after WP06 commit fad5f9b)"
       }
     }
   ],

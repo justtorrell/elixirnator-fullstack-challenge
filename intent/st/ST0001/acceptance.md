@@ -35,7 +35,7 @@ title: NASA fuel calculator: plan and build (one-day delivery)
 
 ### Group AC06
 
-- AC06 (non-test) Code is organised in WDD layers described by elixirator_challenge/.wdd_project_map.yaml, and mix wdd.validate exits 0 -- satisfied: no
+- AC06 (non-test) Code is organised in WDD layers described by elixirator_challenge/.wdd_project_map.yaml, and mix wdd.validate exits 0 -- evidence: mix wdd.validate exit 0, compliance 99.7%, 0 errors, 0 warnings (2026-10-30, after WP06 commit fad5f9b) -- satisfied: yes
 
 ### Group AT01
 

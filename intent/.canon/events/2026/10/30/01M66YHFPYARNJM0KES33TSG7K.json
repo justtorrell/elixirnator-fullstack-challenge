@@ -1,0 +1,14 @@
+{
+  "id": "01M66YHFPYARNJM0KES33TSG7K",
+  "ts": "2026-10-30T17:43:23.103Z",
+  "principal": "local",
+  "project_id": "124a28ce-e3a2-423f-aade-2565d19f0129",
+  "op": "ac.satisfy",
+  "subject": {
+    "type": "ac",
+    "id": "ST0001/AC06"
+  },
+  "payload": {
+    "evidence": "mix wdd.validate exit 0, compliance 99.7%, 0 errors, 0 warnings (2026-10-30, after WP06 commit fad5f9b)"
+  }
+}
