@@ -2,7 +2,7 @@
 wp_id: WP-04
 title: Core: data structures and MissionCalculations
 scope: S
-status: Not Started
+status: WIP
 ---
 
 # WP-04: Core: data structures and MissionCalculations
