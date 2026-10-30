@@ -1,15 +1,15 @@
 ---
 wp_id: WP-05
-title: Core: data structures and MissionCalculations
+title: Boundary: Missions API with validation
 scope: S
 status: Not Started
 ---
 
-# WP-05: Core: data structures and MissionCalculations
+# WP-05: Boundary: Missions API with validation
 
 ## Objective
 
-Build Planet, FlightStep, Mission and MissionCalculations test-first against the spec values (design tasks C1-C6).
+Build Missions.calculate/1: parse and validate form params, return errors as data, delegate to the core (design tasks B1-B3).
 
 ## Acceptance
 

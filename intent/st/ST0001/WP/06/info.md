@@ -1,15 +1,15 @@
 ---
 wp_id: WP-06
-title: Boundary: Missions API with validation
+title: LiveView: mission form, live results and tests
 scope: S
 status: Not Started
 ---
 
-# WP-06: Boundary: Missions API with validation
+# WP-06: LiveView: mission form, live results and tests
 
 ## Objective
 
-Build Missions.calculate/1: parse and validate form params, return errors as data, delegate to the core (design tasks B1-B3).
+Build MissionLive and its components: live total, add/remove steps, validation errors, LiveView tests (design tasks L1-L6).
 
 ## Acceptance
 

@@ -1,15 +1,15 @@
 ---
 wp_id: WP-04
-title: Wrap-up: worker-bee and critic checks on the finished code (runs last)
+title: Core: data structures and MissionCalculations
 scope: S
 status: Not Started
 ---
 
-# WP-04: Wrap-up: worker-bee and critic checks on the finished code (runs last)
+# WP-04: Core: data structures and MissionCalculations
 
 ## Objective
 
-Run mix wdd.validate and the elixir critic on the finished code and fix what they flag (design tasks W1, W2).
+Build Planet, FlightStep, Mission and MissionCalculations test-first against the spec values (design tasks C1-C6).
 
 ## Acceptance
 

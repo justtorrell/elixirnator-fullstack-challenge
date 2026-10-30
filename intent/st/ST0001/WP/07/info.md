@@ -1,15 +1,15 @@
 ---
 wp_id: WP-07
-title: LiveView: mission form, live results and tests
+title: Wrap-up: worker-bee and critic checks on the finished code
 scope: S
 status: Not Started
 ---
 
-# WP-07: LiveView: mission form, live results and tests
+# WP-07: Wrap-up: worker-bee and critic checks on the finished code
 
 ## Objective
 
-Build MissionLive and its components: live total, add/remove steps, validation errors, LiveView tests (design tasks L1-L6).
+Run mix wdd.validate and the elixir critic on the finished code and fix what they flag, then commit and close the thread (design tasks W1-W3).
 
 ## Acceptance
 
