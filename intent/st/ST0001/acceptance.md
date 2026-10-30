@@ -15,7 +15,7 @@ title: NASA fuel calculator: plan and build (one-day delivery)
 
 ### Group AC01
 
-- AC01 Fuel calculation matches the spec: the Apollo 11 land-on-Earth example (9278 for one application, 13447 in total) and the three example missions (Apollo 11 51898, Mars 33388, Passenger Ship 212161) -- satisfied: no (computed)
+- AC01 Fuel calculation matches the spec: the Apollo 11 land-on-Earth example (9278 for one application, 13447 in total) and the three example missions (Apollo 11 51898, Mars 33388, Passenger Ship 212161) -- satisfied: yes (computed)
 
 ### Group AC02
 
@@ -77,7 +77,7 @@ _(no tests in this group)_
 
 ### Group AT01
 
-- AT01 `elixirator_challenge/test/elixirator_challenge/core/mission_calculations_test.exs` -- covers AC01 -- status: to-write -- Test file written in task C3-C6
+- AT01 `elixirator_challenge/test/elixirator_challenge/core/mission_calculations_test.exs` -- covers AC01 -- status: green -- Test file written in task C3-C6. The tests were written first and failed with UndefinedFunctionError before MissionCalculations was implemented.
 
 ### Group AT02
 

@@ -2,7 +2,7 @@
 wp_id: WP-05
 title: Boundary: Missions API with validation
 scope: S
-status: Not Started
+status: WIP
 ---
 
 # WP-05: Boundary: Missions API with validation

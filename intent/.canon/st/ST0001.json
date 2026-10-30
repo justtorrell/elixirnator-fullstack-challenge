@@ -41,7 +41,7 @@
       "seq": 4,
       "title": "Core: data structures and MissionCalculations",
       "scope": "S",
-      "status": "wip",
+      "status": "done",
       "objective": "Build Planet, FlightStep, Mission and MissionCalculations test-first against the spec values (design tasks C1-C6).",
       "body": "",
       "preamble": ""
@@ -50,7 +50,7 @@
       "seq": 5,
       "title": "Boundary: Missions API with validation",
       "scope": "S",
-      "status": "not-started",
+      "status": "wip",
       "objective": "Build Missions.calculate/1: parse and validate form params, return errors as data, delegate to the core (design tasks B1-B3).",
       "body": "",
       "preamble": ""
@@ -133,8 +133,8 @@
       "covers": [
         "AC01"
       ],
-      "status": "to-write",
-      "note": "Test file written in task C3-C6"
+      "status": "green",
+      "note": "Test file written in task C3-C6. The tests were written first and failed with UndefinedFunctionError before MissionCalculations was implemented."
     },
     {
       "id": "AT02",

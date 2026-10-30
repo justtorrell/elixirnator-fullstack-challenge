@@ -126,8 +126,8 @@ To complete this, we will be using test driven development to work from the grou
 | WP-01 | Design breakdown (design.md: words to pseudo to tasks to checklist) | S    | Done        |
 | WP-02 | Acceptance contract (ACs and ATs)                                   | S    | Done        |
 | WP-03 | WDD project map and module skeleton                                 | S    | Done        |
-| WP-04 | Core: data structures and MissionCalculations                       | S    | WIP         |
-| WP-05 | Boundary: Missions API with validation                              | S    | Not Started |
+| WP-04 | Core: data structures and MissionCalculations                       | S    | Done        |
+| WP-05 | Boundary: Missions API with validation                              | S    | WIP         |
 | WP-06 | LiveView: mission form, live results and tests                      | S    | Not Started |
 | WP-07 | Wrap-up: worker-bee and critic checks on the finished code          | S    | Not Started |
 
